@@ -1,0 +1,368 @@
+.page{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    user-select: none;
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    section{
+        margin-bottom: 20px;
+    }
+    
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+  
+.btn:active {
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    z-index: 1000; 
+    background-color: #333333;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.nav-container__list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-container__item{
+    width: auto;
+    min-width: 100px;
+    min-height: 40px;
+    margin-right: 5px;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 20px 20px 0;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.promo_offers{
+    padding-top: 120px;
+    background-image: url('img/Main_image.webp') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.promo_offers_item{
+    padding-bottom: 5px;
+}
+
+.promo_offers_item::before {
+    content: url('/img/list-icon.svg');
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+  }
+
+.btn--order{
+    border-radius: 8px;
+}
+
+.description{
+background-image: url('img/Office_building.webp');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.description_image{
+display: none;
+}
+
+.contact-form{
+    background-color: #C3AC96;
+    color: #38535D;
+    min-width: 300px;
+    margin: 0;
+    padding-bottom: 20px;
+    border-radius: 25px;
+
+    h2{
+        text-align: center;
+    }
+}
+
+.contact-form__item{
+    width: 100%;
+}
+
+.contact-form__input {
+    width: 100%;
+    max-width: 770px;
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Увеличенный шрифт для удобства */
+}
+  
+
+.contact-img{
+    display: none;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a{  
+        text-decoration: none;
+        color: inherit;
+    }
+  }
+  
+  .policy input {
+    width: 16px;
+    height: 16px;
+  }
+
+.submit-btn{
+    min-width: 100%;
+    background-color: #333333;
+}
+
+.submit-btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.submit-btn:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-tagline{
+    display: none;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media_item a img {
+    transition: filter 0.3s, opacity 0.3s;
+}
+  
+  .social-media_item a:hover img {
+    filter: brightness(1.5);
+    opacity: 0.8;
+}
+
+.footer__info-btn{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.footer__info-btn:hover{
+    color: #ffffff;
+}
+
+@media (min-width: 769px)  {
+
+    header {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .nav-container__item{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .main_container{
+
+        .description, .promo_offers {
+            height: 80vh;
+        }
+    }
+
+    .container{
+        background-color: rgba(0, 0, 0, 0);
+        margin: auto 10%;
+        margin-left: 0;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+
+    .btn--order{
+        min-height: 100px;
+        min-width: 180px;
+        font-size: 1.5rem;
+    }
+
+    .promo_offers{
+        background-size: 70% 85%;
+        background-position: 180% 0;
+    }
+
+    .description {
+        background-image:url('/img/Office_building.webp');
+        background-size: 80% 100%; 
+        background-position: 160% 0%;
+        background-repeat: no-repeat, no-repeat;
+    }
+        
+
+    .contact-form{
+        margin:  0 5%;
+        background-image: url('/img/contact-form_image.webp');
+        background-size: auto 100% ;
+        background-position: right;
+        background-repeat: no-repeat;
+
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    
+    }
+
+    .contact-form__item{
+        padding: 10px 100px;
+        max-width: 50%;
+    }
+
+    .footer-tagline{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2.5rem;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .footer-tagline__item{
+        margin: 0 10%;
+    }
+
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media_item{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 900px)  {
+    header {
+        width: 50%;
+        background-color: #333333;
+    }   
+
+    .container{
+        margin: auto 10%;
+        width: 40%;
+        font-size: 2rem;
+    }
+
+    .promo_offers{
+        background-size: 50% 100%;
+        background-position: 120% 0;
+    }
+
+    .description {
+        background-image: url('/img/Townhouse.webp'), url('/img/Office_building.webp');
+        background-size: 45% 100%, 45% 100%; 
+        background-position: -30% 0%, 130% 0%;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    .description_text{
+        width: 40%;
+        position: center;
+        margin-left: 30%;
+        padding: 0;
+        font-size: 1.5rem;
+        button{
+            min-width: 80%;
+        }
+    }
+
+    .submit-btn{
+        min-width: 80%;
+        margin-top: 10px;
+        background-color: #333333;
+    }
+}

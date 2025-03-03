@@ -3,46 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Prime Estate company</title>
   </head>
 
   <body class="page">
     <header>
-      <div class="nav-container">
-        <nav>
-          <div class="logo">
+      <nav>
+        <div class="nav-container">
+          <div class="logo nav-container__item btn">
             <a href="#">PEstate</a>
           </div>
 
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Apartments</a></li>
-            <li><a href="#">Business Spaces</a></li>
+          <ul class="nav-container__list">
+            <li class="nav-container__item btn">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-container__item btn">
+              <a href="#">Apartments</a>
+            </li>
+            <li class="nav-container__item btn">
+              <a href="#">Business Spaces</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+
+        </div>
+      </nav>
     </header>
+    
 
-    <main class="container">
+    <main class="main_container">
+
       <section class="promo_offers">
-        <h1>Special Offers</h1>
-        <div class="offer">
-          <p>Up to $10,000 Discount – Limited-time offer!</p>
-          <p>Luxury Apartments – 30% Off on selected units!</p>
-          <p>Move-in Ready – Pay Only 17% Now</p>
-          <button class="order-btn">Get an Offer</button>
+
+        <div class="container">
+          <h1>Special Offers</h1>
+          <ul class="promo_offers_list">
+            <li class="promo_offers_item"> Up to $10,000 Discount – Limited-time offer!</li>
+            <li class="promo_offers_item"> Luxury Apartments – 30% Off on selected units!</li>
+            <li class="promo_offers_item"> Move-in Ready – Pay Only 17% Now</li>
+          </ul>
+            <button class="btn--order btn">Get an Offer</button>
         </div>
 
-        <div class="image">
-          <img src="building.jpg" alt="Modern apartment building image" />
-        </div>
       </section>
 
-      <section class="description">
-        <div class="image left">
-          <img src="building1.jpg" alt="Modern office building" />
-        </div>
-        <div class="content">
+      <section class="description description_container">
+        <!-- <div class="image left">
+          <img class="description_image img" src="/img/Office_building.webp" alt="Modern office building" />
+        </div> -->
+        <div class="container description_text">
           <h2>Why Choose Prime Estate?</h2>
           <ul>
             <li>✔ Premium-class apartments with modern design</li>
@@ -51,48 +61,89 @@
             <li>✔ Convenient locations near transport hubs</li>
             <li>✔ Flexible payment plans and mortgage options</li>
           </ul>
-          <button class="offer-btn">Get an Offer</button>
+          <button class="btn--order btn">Get an Offer</button>
         </div>
-        <div class="image right">
-          <img src="building2.jpg" alt="Luxury appartments building" />
-        </div>
+        <!-- <div class="image right">
+          <img class="description_image img" src="/img/Townhouse.webp" alt="Luxury appartments building" />
+        </div> -->
       </section>
 
       <section class="contact-form">
         <h2>Get in Touch</h2>
         <form action="#" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-
-          <div class="checkbox">
-            <input type="checkbox" id="policy" name="policy" required />
-            <label for="policy"
-              >I accept the <a href="#">privacy policy</a></label
-            >
+          <div class="contact-form__item">
+            <input class="contact-form__input" type="text" id="name" name="name" placeholder="Name" required />
           </div>
 
-          <button type="submit">Submit Form</button>
+          <div class="contact-form__item">
+            <input class="contact-form__input" type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+
+          <div class="contact-form__item">
+            <div class="policy">
+              <input type="checkbox" id="policy" name="policy" required />
+              <label for="policy">
+                I accept the <a href="#">privacy policy</a>
+              </label>
+            </div>
+            <button class="btn--order submit-btn btn" type="submit">Submit Form</button>
+          </div>
+
         </form>
+
+        <div class="contact-img">
+          <img class="img" src="/img/contact-form_image.webp" alt="Modern office building" />
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-tagline">Reliable. Cozy. Prestigious.</div>
+      <div class="footer-tagline">
+        <p class="footer-tagline__item">Reliable</p>
+        <p class="footer-tagline__item">Cozy</p>
+        <p class="footer-tagline__item">Prestigious</p>
+      </div>
       <div class="footer-content">
         <div class="footer-block">
           <h3>PEstate</h3>
-          <p>Since 1990</p>
+          <p>&copy; 2025 Copyright</p>
         </div>
         <div class="footer-block social-media">
-          <a href="#"><img src="icon-facebook.svg" alt="Facebook" /></a>
-          <a href="#"><img src="icon-instagram.svg" alt="Instagram" /></a>
-          <a href="#"><img src="icon-linkedin.svg" alt="LinkedIn" /></a>
+
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/tiktok.svg" alt="TikTok" />
+            </a>
+          </div>
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/youtube.svg" alt="Youtube" />
+            </a>
+          </div>
+          <div class="social-media_item">
+            <a href="#">
+              <img src="/img/telegram.svg" alt="Telegram" />
+            </a>
+          </div>
         </div>
+
         <div class="footer-block">
-          <button>Order</button>
+          <button class="footer__info-btn btn">Order</button>
           <p><a href="#">Legal Information</a></p>
         </div>
       </div>
