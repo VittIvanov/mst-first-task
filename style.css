@@ -292,6 +292,10 @@ display: none;
         background-repeat: no-repeat, no-repeat;
     }
         
+    .description_container{
+
+        padding-bottom: 50px;
+    }
 
     .contact-form{
         margin:  0 5%;
